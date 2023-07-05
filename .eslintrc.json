@@ -21,6 +21,11 @@
     },
     "plugins": ["react", "@typescript-eslint", "eslint-plugin-import-helpers", "prettier"],
     "rules": {
+        "no-unused-expressions": "off",
+        "prefer-const": "off",
+        "no-inner-declarations": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "import/order": "off",
         "react/no-unescaped-entities": "off",
         "react/function-component-definition": "off",
         "react/require-default-props": "off",
@@ -49,7 +54,7 @@
             }
         ],
         "import-helpers/order-imports": [
-            "warn",
+            "off",
             {
                 "newlinesBetween": "always",
                 "groups": ["module", "/^@shared/", ["parent", "sibling", "index"]],
