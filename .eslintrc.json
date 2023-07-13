@@ -21,6 +21,7 @@
     },
     "plugins": ["react", "@typescript-eslint", "eslint-plugin-import-helpers", "prettier"],
     "rules": {
+        "react/jsx-no-bind": "off",
         "no-unused-expressions": "off",
         "prefer-const": "off",
         "no-inner-declarations": "off",

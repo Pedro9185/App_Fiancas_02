@@ -7,6 +7,13 @@ import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 
 export default function ButtonAppBar() {
+    const navigate = useNavigate();
+
+    function logout() {
+        localStorage.removeItem("userLogged");
+        navigate("/");
+        console.log("rodando");
+    }
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
@@ -15,7 +22,9 @@ export default function ButtonAppBar() {
                         App Finanças
                     </Typography>
                     <Button color="inherit">Login</Button>
-                    <Button color="inherit">Sair</Button>
+                    <Button color="inherit" onClick={() => logout()}>
+                        Sair
+                    </Button>
                 </Toolbar>
             </AppBar>
         </Box>
