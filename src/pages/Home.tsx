@@ -1,18 +1,22 @@
 import { Grid } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 
 import buscarDadosDoLocalStorage from "../utils/buscarDados";
 import { useNavigate } from "react-router-dom";
 
 import BasicAppBar from "./components/AppBar";
+import UserType from "../types/UserType";
 
 const Home: React.FC = () => {
     const navigate = useNavigate();
+
     const userLogged = buscarDadosDoLocalStorage("userLogged");
 
-    if (!userLogged.email) {
-        navigate("/");
-    }
+    useEffect(() => {
+        if (!userLogged.email) {
+            navigate("/");
+        }
+    }, [userLogged]);
 
     return (
         <>

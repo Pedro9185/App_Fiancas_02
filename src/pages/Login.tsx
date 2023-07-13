@@ -16,9 +16,12 @@ const Login: React.FC = () => {
             display="flex"
             bgcolor="#f2f2f2"
         >
-            <Grid height="80%" width="30%">
+            <Grid height="80%" width="30%" xs={12} sm={6}>
                 <Grid
-                    xs={false}
+                    xs={12}
+                    sm={6}
+                    md={6}
+                    lg={6}
                     spacing={2}
                     display="flex"
                     flexDirection="column"
@@ -32,7 +35,7 @@ const Login: React.FC = () => {
                     <Grid xs={12} marginBottom="50px">
                         <Typography variant="h4">Acessar App Finanças</Typography>
                     </Grid>
-                    <Form mode="signin" />
+                    <Form mode="signin" textButton="Logar" />
                 </Grid>
             </Grid>
         </Grid>

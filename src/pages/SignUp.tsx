@@ -63,7 +63,7 @@ const SignUp: React.FC = () => {
                         <Grid xs={12} marginBottom="50px">
                             <Typography variant="h6">CRIE SUA CONTA</Typography>
                         </Grid>
-                        <Form mode="signup" />
+                        <Form mode="signup" textButton="Cadastrar" />
                     </Grid>
                 </Grid>
             </Grid>

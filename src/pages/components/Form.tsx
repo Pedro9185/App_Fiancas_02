@@ -15,9 +15,10 @@ import armazenarDadosUsuarioLocalStorage from "../../utils/ArmazenarDados";
 
 interface FormProps {
     mode: "signin" | "signup";
+    textButton: string;
 }
 
-const Form: React.FC<FormProps> = ({ mode }) => {
+const Form: React.FC<FormProps> = ({ mode, textButton }) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [repassword, setRepassword] = useState("");
@@ -151,19 +152,10 @@ const Form: React.FC<FormProps> = ({ mode }) => {
                     fullWidth
                     sx={{ mt: 3, mb: 2 }}
                 >
-                    Logar
+                    {textButton}
                 </Button>
 
                 <Grid container>
-                    {mode === "signin" && (
-                        <Grid item xs={4}>
-                            <Typography variant="body2">
-                                <Link style={{ color: "inherit" }} to="/">
-                                    Esqueceu sua senha?
-                                </Link>
-                            </Typography>
-                        </Grid>
-                    )}
                     <Grid item xs={8} textAlign="end">
                         {mode === "signin" ? (
                             <Typography variant="body2">
