@@ -100,7 +100,7 @@ const Form: React.FC<FormProps> = ({ mode, textButton }) => {
                     value={email}
                     onChange={(evento) => setEmail(evento.target.value)}
                     margin="normal"
-                    variant="outlined"
+                    variant="standard"
                     type="email"
                     required
                     id="email"
@@ -113,7 +113,7 @@ const Form: React.FC<FormProps> = ({ mode, textButton }) => {
                     value={password}
                     onChange={(evento) => setPassword(evento.target.value)}
                     margin="normal"
-                    variant="outlined"
+                    variant="standard"
                     type="password"
                     required
                     id="password"
@@ -127,7 +127,7 @@ const Form: React.FC<FormProps> = ({ mode, textButton }) => {
                         value={repassword}
                         onChange={(evento) => setRepassword(evento.target.value)}
                         margin="normal"
-                        variant="outlined"
+                        variant="standard"
                         type="password"
                         required
                         id="repassword"

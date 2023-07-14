@@ -47,7 +47,7 @@ const SignUp: React.FC = () => {
                 display="flex"
                 bgcolor="#f2f2f2"
             >
-                <Grid height="80%" width="30%">
+                <Grid height="80%" xs={8} sm={8}>
                     <Grid
                         xs={false}
                         spacing={2}

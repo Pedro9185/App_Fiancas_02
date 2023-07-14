@@ -8,7 +8,6 @@ import Form from "./components/Form";
 const Login: React.FC = () => {
     return (
         <Grid
-            xs={12}
             width="100vw"
             height="100vh"
             justifyContent="center"
@@ -16,12 +15,10 @@ const Login: React.FC = () => {
             display="flex"
             bgcolor="#f2f2f2"
         >
-            <Grid height="80%" width="30%" xs={12} sm={6}>
+            <Grid height="80%" xs={8} sm={8}>
                 <Grid
-                    xs={12}
-                    sm={6}
-                    md={6}
-                    lg={6}
+                    xs={6}
+                    sm={10}
                     spacing={2}
                     display="flex"
                     flexDirection="column"
@@ -32,8 +29,8 @@ const Login: React.FC = () => {
                     justifyContent="center"
                     borderRadius="20px"
                 >
-                    <Grid xs={12} marginBottom="50px">
-                        <Typography variant="h4">Acessar App Finanças</Typography>
+                    <Grid xs={10} marginBottom="50px">
+                        <Typography variant="h5">Acessar App Finanças</Typography>
                     </Grid>
                     <Form mode="signin" textButton="Logar" />
                 </Grid>
