@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Button, Grid, TextField } from "@mui/material";
 import React, { useEffect } from "react";
 
 import buscarDadosDoLocalStorage from "../utils/buscarDados";
@@ -29,9 +29,9 @@ const Home: React.FC = () => {
                     alignItems="center"
                     justifyContent="center"
                 >
-                    <Grid bgcolor="GrayText" xs={12} sm={10} height="100%">
-                        ola mundo
-                    </Grid>
+                    <TextField label="Descrição" variant="standard" />
+                    <TextField label="Valor" variant="standard" />
+                    <Button variant="outlined">Cadastrar</Button>
                 </Grid>
             </Box>
         </>
